@@ -8,8 +8,12 @@
         </div>
         <div class="card-body">
 
-            <form action="/contact" method="post">
-                {{ csrf_field() }}
+            <form action="{{route('contact.store')}}" method="post">
+               {{ csrf_field() }}
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input name="name" class="form-control" id="name" placeholder="Enter Name">
+                </div>
                 <div class="form-group">
                     <label for="email">Email address</label>
                     <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp"

@@ -7,23 +7,23 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{route('home')}}">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/about">About</a>
+                <a class="nav-link" href="{{route('about')}}">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/contact">Contact</a>
+                <a class="nav-link" href="{{route('contact')}}">Contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/viewmessages">View Messages</a>
+                <a class="nav-link" href="{{route('viewmessages')}}">View Messages</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Your Account</a>
                 <div class="dropdown-menu">
-                    <a class="dropdown-item" href="/signup">Sign Up</a>
-                    <a class="dropdown-item" href="/login">Sign In</a>
-                    <a class="dropdown-item" href="/">Log Out</a>
+                    <a class="dropdown-item" href="{{route('signup')}}">Sign Up</a>
+                    <a class="dropdown-item" href="{{route('login')}}">Sign In</a>
+                    <a class="dropdown-item" href="{{route('home')}}">Log Out</a>
 
             </li>
         </ul>
